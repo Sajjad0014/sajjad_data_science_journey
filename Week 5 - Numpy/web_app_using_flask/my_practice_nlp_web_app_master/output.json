@@ -1,0 +1,39 @@
+{
+  "entities": [
+    {
+      "name": "Apple Inc.",
+      "category": "Organization",
+      "confidence_score": 0.95
+    },
+    {
+      "name": "iPhone 15",
+      "category": "Product",
+      "confidence_score": 0.90
+    },
+    {
+      "name": "September 12, 2024",
+      "category": "Date",
+      "confidence_score": 0.85
+    },
+    {
+      "name": "Cupertino, California",
+      "category": "Location",
+      "confidence_score": 0.93
+    },
+    {
+      "name": "Tim Cook",
+      "category": "Person",
+      "confidence_score": 0.92
+    },
+    {
+      "name": "CEO",
+      "category": "Title",
+      "confidence_score": 0.88
+    },
+    {
+      "name": "globally",
+      "category": "Location",
+      "confidence_score": 0.80
+    }
+  ]
+}
