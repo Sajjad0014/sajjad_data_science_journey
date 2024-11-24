@@ -1,0 +1,80 @@
+The Only SQL You Actually Need For Your First Job
+(From someone who interviews data analysts)
+
+The Learning Trap:
+* Complex subqueries
+* Advanced CTEs
+* Recursive queries
+* 100+ tutorials watched
+* 0 practical experience
+
+
+75% of my daily SQL tasks as a junior data analyst:
+* Basic SELECT, FROM, WHERE
+* JOINs
+* GROUP BY
+* ORDER BY
+* Simple aggregations
+* ROW_NUMBER
+
+The Secret:
+It's not about knowing everything
+It's about doing simple things well
+
+What You ACTUALLY Need:
+
+1. SELECT Mastery
+* SELECT * LIMIT 10
+ (yes, for exploration only!)
+* COUNT, SUM, AVG
+ (used every single day)
+* DATE functions
+ (life-saving for reports)
+* CASE WHEN 
+
+2. JOIN Logic
+* LEFT JOIN
+ (your best friend)
+* INNER JOIN
+ (your second best friend)
+* That's it.
+ (seriously)
+
+3. WHERE Magic
+* Basic conditions
+* AND, OR operators
+* IN, NOT IN
+* NULL handling
+* LIKE for text search
+
+4. GROUP BY Essentials
+* Basic grouping
+* HAVING clause
+* Multiple columns
+* Simple aggregations
+
+Most common tasks:
+* Pull monthly sales
+* Count unique customers
+* Calculate basic metrics
+* Filter date ranges
+* Join 2-3 tables
+
+Focus on:
+* Clean code
+* Clear comments
+* Consistent formatting
+* Proper indentation
+
+Want to stand out?
+
+Learn to:
+* Document your queries
+* Handle NULL values properly
+* Format dates consistently
+* Write readable code
+* Use clear column names
+
+P.S. Complex SQL will come naturally when you ACTUALLY need it
+P.P.S. But you'll need basic SQL every day
+P.P.P.S. Start there!
