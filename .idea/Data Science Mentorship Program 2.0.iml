@@ -2,8 +2,8 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/Week 11 - Data Analysis/session_on_advanced_web_scraping_using_selenium/advanced-web-scraping-master/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/Week 9 - Data Visualization/session_on_plotly_project/india-data-viz-mini-project-master/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/Week 11 - Data Analysis/2_session_on_advanced_web_scraping_using_selenium/advanced-web-scraping-master/.idea" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
