@@ -46,6 +46,7 @@ SELECT * FROM users1 t1
 JOIN users1 t2
 ON t1.emergency_contact = t2.user_id;
 
+
 SELECT * FROM students t1
 JOIN class t2
 ON t1.class_id = t2.class_id AND t1.enrollment_year = t2.class_year;
@@ -129,4 +130,16 @@ SELECT t2.category, SUM(profit) AS 'sum_profit' FROM session34.order_details t1
 JOIN session34.category t2
 ON t1.category_id = t2.category_id
 GROUP BY t2.category
-HAVING sum_profit > 5000
+HAVING sum_profit > 5000;
+
+
+
+SELECT *
+FROM session34.users1 t1
+CROSS JOIN session34.groups t2;
+
+SELECT * FROM information_schema.Tables
+WHERE table_schema = ‘zomato’;
+
+SELECT COLUMN_NAME FROM information_schema.Columns
+WHERE table_schema = ‘campusx’ AND table_name = ‘smartphones’;

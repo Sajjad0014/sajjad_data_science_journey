@@ -34,7 +34,7 @@ SELECT CURRENT_TIME();
 SELECT NOW();
 
 INSERT INTO uber_rides (user_id, cab_id, start_time, end_time) VALUES
-(1, 7, '2025-02-23', NOW());
+(1, 7, '2025-02-23', NOW());0
 
 SELECT * FROM uber_rides;
 

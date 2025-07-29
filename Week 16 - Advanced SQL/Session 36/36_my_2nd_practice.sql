@@ -65,6 +65,10 @@ FROM marks;
 
 
 SELECT *,
+LAST_VALUE(marks) OVER(PARTITION BY branch ORDER BY marks DESC)
+FROM marks;
+
+SELECT *,
 LAST_VALUE(marks) OVER(PARTITION BY branch ORDER BY marks DESC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
 FROM marks;
 
@@ -77,6 +81,11 @@ NTH_VALUE(name, 2) OVER(PARTITION BY branch
 FROM marks;
 
 -- If we give 5 which is not there, it will give NULL values
+SELECT *,
+NTH_VALUE(name, 5) OVER(PARTITION BY branch
+					ORDER BY marks DESC
+                    ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+FROM marks;
 
 -- 1.	Find the branch toppers
 SELECT name, marks, branch FROM (SELECT *,
@@ -94,11 +103,11 @@ ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)) t
 WHERE t.name = t.topper_name AND t.marks = t.topper_marks;
 
 SELECT name, marks, branch FROM (SELECT *,
-LAST_VALUE(name) OVER w AS 'last_marks_name',
- LAST_VALUE(marks) OVER w AS 'least_marks'
- FROM marks
- WINDOW w AS (PARTITION BY branch ORDER BY marks DESC
- ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)) t
+	LAST_VALUE(name) OVER w AS 'last_marks_name',
+	LAST_VALUE(marks) OVER w AS 'least_marks'
+	FROM marks
+	WINDOW w AS (PARTITION BY branch ORDER BY marks DESC
+	ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)) t
 WHERE t.name = t.last_marks_name AND t.marks = t.least_marks;
 -- FRAME Clause
 

@@ -26,7 +26,8 @@ INSERT INTO campusx_delete.users VALUES
 
 SELECT * FROM campusx_delete.users;
 
-SELECT os AS 'Operating Systems', model, battery_capacity FROM campusx.smartphones;
+SELECT os AS 'Operating Systems', model, battery_capacity 
+FROM campusx.smartphones;
 
 
 SELECT model, 'smartphone' AS 'type' FROM campusx.smartphones;
@@ -126,7 +127,8 @@ SELECT * FROM smartphones;
 
 -- Find the average battery capacity and the average primary rear camera resolution for all smartphones 
 -- with a price greater than or equal to 100000
-SELECT AVG(battery_capacity), AVG(primary_camera_rear) FROM smartphones
+SELECT AVG(battery_capacity), AVG(primary_camera_rear) 
+FROM smartphones
 WHERE price >= 100000;
 
 -- Find the average internal memory capacity of smartphones that have a refresh rate of 120 Hz or higher 
